@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Question no:Three</title>
+    </head>
+        <body>
+            <h1>Write a JavaScript program to get the current date</h1>
+        <script>
+           
+            let date=new Date();
+            console.log("Date:", date);
+            let month=date.getMonth();
+            console.log("Month:", month);
+            let da= date.getDate();
+            console.log(da);
+            let yr=date.getFullYear();
+            console.log("Year:", yr);
+
+            if(month<10){
+                month="0"+month;
+            }
+            if(da<10){
+                da="0"+da;
+            }
+            console.log(`${month}-${da}-${yr}`);
+            console.log(`${month}/${da}/${yr}`);
+        </script>
+        </body>
+</html>
