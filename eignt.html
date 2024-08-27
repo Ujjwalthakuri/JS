@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Q.no:8</title>
+    </head>
+    <body>
+        <h3>Write a JavaScript program where the program takes a random integer between 1 and 10, and the user is then prompted to input a guess number. The program displays a message "Good Work" if the input matches the guess number otherwise "Not matched".  </h3>
+        <script>
+        let comp=()=>{
+            let auto=Math.ceil(Math.random()*10);
+            console.log("Computer generates:",auto);
+            you(auto);
+        }   
+        let your=()=>{
+            let you_enter =window.prompt("Guess the number!");
+            console.log("YOu enter:", you_enter);
+            return you_enter;
+        }  
+        let you=(comp)=>{
+           let enter=your();
+            if(comp===enter){
+                console.log("Good Work!");
+            }else{
+                console.log(`Not Match because ${enter} is not equal to ${comp}`);
+            }
+        }
+        comp();
+        </script>
+    </body>
+</html>
