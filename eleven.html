@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:11</title>
+</head>
+<body>
+    <h5>11. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  
+[ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+
+    <script>
+        let c=window.prompt("Enter a temperature in celsius");
+        let f=window.prompt("Enter a temperature in fahrenheit");
+        
+        ctemp=5/9*(f-32);
+        ftemp=(9*c+(32*5))/5;
+        console.log(c+"\xB0C is " +ftemp+ " \xB0F.");
+        console.log(f+"\xB0F is " + ctemp+ " \xB0C.");
+    </script>
+</body>
+</html>

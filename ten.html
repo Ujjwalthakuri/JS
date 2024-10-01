@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:10</title>
+</head>
+<body>
+    <h5>10. Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  </h5>
+    <form action="" id="form">
+    <label>1st number</label>
+    <input type="text" id="first"><br><br>        
+    <label>2nd number</label>
+    <input type="text" id="second"><br><br>
+    <button id="mul">Multiply</button>
+    <button id="div">Divide</button>
+</form>
+<h4>The Result is:</h2>
+    <p id="result"></p>
+    <script>
+        let mult=document.getElementById("mul");
+        mult.addEventListener("click", (event)=>{
+             event.preventDefault(); 
+            let first=document.getElementById("first").value;
+            let second=document.getElementById("second").value;
+            console.log(first, second);
+            let mm=first*second;
+            document.getElementById("result").innerHTML=mm;
+        });
+        
+         let divv=document.getElementById("div");
+        divv.addEventListener("click", (event)=>{
+            event.preventDefault();
+            let first=document.getElementById("first").value;
+            let second=document.getElementById("second").value;
+            console.log(first, second);
+            let dd=first/second;
+            document.getElementById("result").innerHTML=dd;
+        });
+        
+    </script>
+</body>
+</html>
