@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:20</title>
+</head>
+<body>
+    <h5>20. Write a JavaScript program to check two given integers whether one is positive and another one is negative. </h5>
+
+    <script>
+        function check(a,b){
+            return ((a>0) && (b<0) || (a<0 && b>0));
+        }
+
+        console.log(check(50, -20));
+        console.log(check(50, 20));
+        console.log(check(-50, -20));
+        console.log(check(-50, 20));
+    </script>
+
+</body>
+</html>

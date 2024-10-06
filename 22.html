@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:22</title>
+</head>
+<body>
+    <h5>22. Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.  </h5>
+
+        <script>
+            function remove(word, pos){
+                let p1=word.substring(0, pos);
+                let p2=word.substring(pos+1, word.length);
+                return p1+p2;
+            }
+            console.log(remove("JavaScript", 3));
+            console.log(remove("Python", 5));
+            console.log(remove("Developer", 8));
+        </script>
+
+</body>
+</html>

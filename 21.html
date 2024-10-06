@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:21</title>
+</head>
+<body>
+    <h5>21. Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.  </h5>
+    <script>
+
+            function add(a){
+                if(a.substring(0,2)==="py"){
+                    return a;
+                }else{
+                    return "py"+a;
+                }
+            }
+
+        console.log(add("thon"));
+        console.log(add("pycharm"));
+    </script>
+
+</body>
+</html>

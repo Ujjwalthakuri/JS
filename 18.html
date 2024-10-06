@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:18</title>
+</head>
+<body>
+    <h5>18. Write a JavaScript program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.  </h5>
+
+    <script>
+        function check( a, b){
+            // if(a==50 || b==50){
+            //     return true;
+            // }else if( a+b==50){
+            //     return true;
+            // }else{
+            //     return false;
+            // }
+            return ((a+b==50) || (a==50 || b==50));
+        }
+
+            console.log(check(50, 20));
+            console.log(check(80, 10));
+            console.log(check(20, 30));
+            console.log(check(80, 10));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:23</title>
+</head>
+<body>
+        <h5>23. Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.  </h5>
+
+    <script>
+
+        function firstlast(str){
+
+            if(str.length<=1){
+                return str;
+            }
+             
+            let f=str[0];
+            let l=str[str.length-1];
+            let mid=str.slice(1, str.length-1);
+
+            return l+mid+f;
+        }
+
+        console.log(firstlast("Ram"));
+        console.log(firstlast("Ujjwal"));
+        console.log(firstlast("Shiva"));
+        console.log(firstlast("Ok"));
+    </script>
+
+</body>
+</html>

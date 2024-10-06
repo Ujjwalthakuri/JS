@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:16</title>
+</head>
+<body>
+    <h5>16. Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum</h5>
+
+        <script>
+             let a=window.prompt("Enter first number");
+             a=parseInt(a);
+             let b=window.prompt("Enter second number");
+             b=parseInt(b);
+             let sum=0;
+             if(a===b){
+                sum=3*(a+b);
+                console.log("sum=",sum);
+             }
+             else{
+                sum=a+b;
+                console.log("Sum=", sum);
+             }
+
+            //  using function method:
+            //  function triplesum(a, b){
+            //     if(a==b){
+            //         return 3*(a+b);
+            //     }else{
+            //         return a+b;
+            //     }
+            //  }
+            //  console.log(triplesum(4,4));
+            //  console.log(triplesum(4,3));
+        </script>
+
+</body>
+</html>
