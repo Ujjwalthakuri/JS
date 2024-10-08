@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:29</title>
+</head>
+<body>
+    <h5>29. Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the specified range.  </h5>
+
+    <script>
+
+        function check(a, b, c){
+            if((a>=55 && a<=99) || (b>=55 && b<=99) || (c>=55 && c<=99)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        console.log(check(55, 68, 92));
+        console.log(check(55, 68, 100));
+        console.log(check(50, 68, 92));
+        console.log(check(50, 105, 25));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:30</title>
+</head>
+<body>
+    
+    <h5>30. Write a JavaScript program to check whether a string " Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one. </h5>
+
+    <script>
+        function check(str){
+            let newstr=str;
+            if(newstr.substr(4)=="script"){
+             return newstr.substr(0, 4);
+            }else{
+                return str;
+            }
+        }
+        console.log(check("javascript"));
+        console.log(check("abcdscript"));
+        console.log(check("Reactscript"));
+        console.log(check("script"));
+    </script>
+</body>
+</html>

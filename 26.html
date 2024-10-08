@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:26</title>
+</head>
+<body>
+    <h5>26. Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more.</h5>
+
+    <script>
+
+        function adding(str){
+            if(str.length<3){
+                return str;
+            }
+            let char=str.substr(str.length-3, str.length-1);
+            return char+str+char;
+
+        }
+
+        console.log(adding("ok"));
+        console.log(adding("web"));
+        console.log(adding("javascript"));
+        console.log(adding("Reactjs"));
+    </script>
+</body>
+</html>

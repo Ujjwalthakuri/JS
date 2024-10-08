@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:27</title>
+</head>
+<body>
+    <h5>27. Write a JavaScript program to check whether a string starts with 'Java' if it does not otherwise.  </h5>
+
+    <script>
+        function check(str){
+            
+            let first=str.substring(0, 4);
+            if(first=="java"){
+                return true;
+                // return first;
+            }else{
+               return false;
+            }
+        }
+
+        
+        console.log(check("javawebsite"));
+        console.log(check("javaprogrammer"));
+        console.log(check("programmer"));
+    </script>
+</body>
+</html>

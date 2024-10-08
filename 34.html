@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:34</title>
+</head>
+<body>
+    <h5>34. Write a JavaScript program to find the largest number from the two given positive integers. The two numbers are in the range 40..60 inclusive. </h5>
+     
+    <script>
+        function positive(a, b){
+            if((a>40 && a<60) && (b>40 && b<60)){
+                if(a>b){
+                    return a;
+                }else{
+                    return b;
+                }
+            }else{
+                return false;
+            }
+        }
+
+        console.log(positive(45, 55));
+        console.log(positive(58, 41));
+        console.log(positive(40, 80));
+        console.log(positive(10, 55));
+        console.log(positive(3, -10));
+    </script>
+</body>
+</html>

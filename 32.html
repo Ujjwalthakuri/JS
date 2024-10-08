@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:32</title>
+</head>
+<body>
+        <h5>32. Write a JavaScript program to find the closest value to 100 from two numerical values.  </h5>
+
+        <script>
+            function closest(a, b){
+                if(a!=b){
+                    aa=Math.abs(a-100);
+                    bb=Math.abs(b-100);
+
+                    if(aa<bb){
+                        return a;
+                    }else if( aa>bb){
+                        return b;
+                    }else{
+                        return false;
+                    }
+                }
+            }
+
+            console.log(closest(50, 99));
+            console.log(closest(50, 105));
+            console.log(closest(55, 10));
+        </script>
+
+</body>
+</html>
