@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>45. Write a JavaScript program that checks two integer values and returns true if either one is 15 or if their sum or difference is 15.</h5>
+
+    <script>
+        function check(a, b){
+            let sum=a+b;
+            let diff=a-b;
+            if((a==15 || b==15) || (sum==15) || (diff==15)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+
+        console.log(check(15, 5));
+        console.log(check(20, 5));
+        console.log(check(10, 5));
+        console.log(check(1, 20));
+    </script>
+</body>
+</html>

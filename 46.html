@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:46</title>
+</head>
+<body>
+    <h5>46. Write a JavaScript program to check two given non-negative integers if one (not both) is a multiple of 7 or 11</h5>
+
+    <script>
+        function check(a, b){
+           if (!((a % 7 == 0 || a % 11 == 0) && (b % 7 == 0 || b % 11 == 0))) {
+return ((a % 7 == 0 || a % 11 == 0) || (b % 7 == 0 || b % 11 == 0));
+}
+else
+return false;
+}
+
+        console.log(check(14, 8));
+        console.log(check(10, 22));
+        console.log(check(12, 22));
+        console.log(check(10, 8));
+    </script>
+</body>
+</html>

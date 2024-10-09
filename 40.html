@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:40</title>
+</head>
+<body>
+    <h5>40. Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8. </h5>
+
+    <script>
+        function check(a, b){
+            sum=a+b;
+            diff=a-b;
+            if((a==8 || b==8) || (sum==8) || (diff==8)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        console.log(check(8, 3));
+        console.log(check(6, 2));
+        console.log(check(11, 3));
+        console.log(check(9, 3));
+    </script>
+</body>
+</html>

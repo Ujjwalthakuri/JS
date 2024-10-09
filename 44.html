@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:44</title>
+</head>
+<body>
+    <h5>44. Write a JavaScript program that evaluates three given integers to determine if any one of them is greater than or equal to 20 and less than at least one of the other two.  </h5>
+
+    <script>
+        function check(a, b, c){
+            if((a==20 &&(a<b || a<c)) || (b==20 && (b<a || b<c)) || (c==20 && (c<a || c<b))){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        console.log(check(20, 40, 60));
+        console.log(check(10, 20, 60));
+        console.log(check(20, 20, 20));
+        console.log(check(80, 40, 60));
+    </script>
+</body>
+</html>
