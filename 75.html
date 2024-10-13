@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:75</title>
+</head>
+<body>
+    <h5>75. Write a JavaScript program to create an array taking the middle elements of the two arrays of integer and each length 3</h5>
+
+    <script>
+
+        // function middle(ary1, ary2){
+        //     let first=ary1[1];
+        //     let last=ary2[1];
+        //     return [first, last];
+        // }
+
+        function middle(a, b) 
+{
+  var new_array = []
+  new_array.push(a[1], b[1]);
+
+    return new_array;
+}
+
+        console.log(middle([1, 2, 3],[4, 6, 3]));
+        console.log(middle([1, 4, 3],[4, 10, 3]));
+    </script>
+</body>
+</html>

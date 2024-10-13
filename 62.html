@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:63</title>
+</head>
+<body>
+    <h5>62. Write a JavaScript program to move the last three characters to the start of a given string. The string length must be greater than or equal to three.  </h5>
+
+    <script>
+        function lastfirst(str){
+            if(str.length>=3){
+            let first=str.substr(0, 3);
+            let last=str.substr(3);
+            return last+first;
+        }
+    }
+        console.log(lastfirst("javascript"));
+        console.log(lastfirst("python"));
+    </script>
+</body>
+</html>

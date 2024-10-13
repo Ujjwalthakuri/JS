@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:68</title>
+</head>
+<body>
+    <h5>68. Write a JavaScript program to create a new string using the first and last n characters from a given string. The string length must be larger than or equal to n.  </h5>
+
+    <script>
+        function new_str(str, n){
+            return str.substr(0, n)+str.substr(str.length-n);
+        }
+        console.log(new_str("javascript", 3));
+        console.log(new_str("python", 2));
+    </script>
+</body>
+</html>

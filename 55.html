@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:55</title>
+</head>
+<body>
+    <h5>55. Write a JavaScript program to check whether a given string contains an equal number of p's and t's.  </h5>
+
+    <script>
+        function count(str){
+            let p= str.replace(/[^p]/g, "").length;
+            let t= str.replace(/[^t]/g, "").length;
+            if(p===t){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(count("Javascript"));
+        console.log(count("Reaactt"));
+        console.log(count("ppytthon"));
+    </script>
+</body>
+</html>

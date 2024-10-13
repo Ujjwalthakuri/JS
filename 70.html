@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:70</title>
+</head>
+<body>
+    <h5>70. Write a JavaScript program to rotate the elements left in a given array of integers of length 3.  </h5>
+
+    <script>
+        function rotate(array){
+            if(array.length==3){
+            return [array[1], array[2], array[0]];
+        }else{
+            return false;
+        }
+    }
+        console.log(rotate([7, 8, 9]));
+        console.log(rotate([7, 5, 10]));
+        console.log(rotate([7, 5]));
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:73</title>
+</head>
+<body>
+    <h5>73. Write a JavaScript program to reverse the elements of a given array of integers of length 3.  </h5>
+    
+    <script>
+        function rev(array){
+            return array.map((element, idx, arr) => arr[(arr.length - 1) - idx]);
+        }
+        console.log(rev([1, 2, 3]));
+        console.log(rev([7, 9, 3]));
+    </script>
+</body>
+</html>

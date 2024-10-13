@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:59</title>
+</head>
+<body>
+    <h5>59. Write a JavaScript program to extract the first half of a even string. </h5>
+
+    <script>
+        function half(str){
+            if(str.length%2==0){
+            let res=str.substr(0, str.length/2);
+            return res;
+        }else{
+            return str;
+        }
+        }
+        console.log(half("javascript"));
+        console.log(half("Pythonn"));
+        console.log(half("js"));
+    </script>
+</body>
+</html>

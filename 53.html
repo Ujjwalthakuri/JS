@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:53</title>
+</head>
+<body>
+   <h5>53. Write a JavaScript program to check whether the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.  </h5>
+
+    <script>
+        function check(str){
+           return (/a...b/).test(str) || (/b...a/).test(str);
+        }
+
+        console.log(check("chainsbreak"));
+        console.log(check("chainbreak"));
+    </script>
+</body>
+</html>

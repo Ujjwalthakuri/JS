@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:60</title>
+</head>
+<body>
+    <h5>60. Write a JavaScript program to create a new string without the first and last characters of a given string.  </h5>
+
+    <script>
+        function create(str){
+            let strlen=str.length;
+            return str.substring(1, strlen-1);
+        }
+        console.log(create("javascript"));
+        console.log(create("React"));
+        console.log(create("python"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:51</title>
+</head>
+<body>
+    <h5>51. Write a JavaScript application that transforms a provided numerical value into hours and minutes.</h5>
+
+    <script>
+        function trans(num){
+            let hour=Math.floor(num/60);
+            let min=Math.floor(num%60);
+            return hour+":"+min;
+        }
+        console.log(trans(450));
+        console.log(trans(362));
+    </script>
+</body>
+</html>

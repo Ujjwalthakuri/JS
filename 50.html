@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:50</title>
+</head>
+<body>
+    <h5>50. Write a JavaScript program to capitalize the first letter of each word in a given string.  </h5>
+
+    <script>
+        function cap(str){
+            str=str.split(" ");
+            for(let i=0; i<str.length; i++){
+                str[i]=str[i][0].toUpperCase()+str[i].substr(1);
+            } 
+            return str.join(" ");
+        }
+        console.log(cap("java script"));
+        console.log(cap("pPTHON is good"));
+    </script>
+</body>
+</html>

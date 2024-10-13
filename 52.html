@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:52</title>
+</head>
+<body>
+   <h5>52. Write a JavaScript program to convert letters of a given string alphabetically. </h5>
+
+   <script>
+    function convert(str){
+        str=str.split("");
+        return str.sort().join("");
+    }
+    console.log(convert("javascript"));
+    console.log(convert("abcdE"));
+    console.log(convert("python"));
+    </script>
+</body>
+</html>

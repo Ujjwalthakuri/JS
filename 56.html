@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:56</title>
+</head>
+<body>
+    <h5>56. Write a JavaScript program to divide two positive numbers and return the result as string with properly formatted commas.</h5>
+
+    <script>
+        function Result(a, b){
+            if(b==0){
+                return "cannot be divided by zero";
+            }
+            let result=a/b;
+            let finalresult=result.toLocaleString(undefined, {maximumFractionDigits:2});
+            return finalresult;
+
+        }
+
+        console.log(Result(1000000, 107));
+    </script>
+</body>
+</html>

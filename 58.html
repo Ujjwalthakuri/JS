@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:58</title>
+</head>
+<body>
+    <h5>58. Write a JavaScript program to create an updated string of 4 copies of the last 3 characters of a given original string. The string length must be 3 and above.  </h5>
+
+
+    <script>
+        function update(str){
+            if(str.length<3){
+                return false;
+            }
+            let last_three=str.substr(str.length-3);
+            let result=last_three.repeat(4);
+            // return last_three;
+            return result;
+        }
+
+        console.log(update("javascript"));
+        console.log(update("python"));
+        console.log(update("py"));
+    </script>
+</body>
+</html>

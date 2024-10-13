@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:61</title>
+</head>
+<body>
+    <h5>61. Write a JavaScript program to concatenate two strings except for their first character. </h5>
+
+    <script>
+        function connect(str1, str2){
+            let first=str1.substr(1);
+            let second=str2.substr(2);
+            return first.concat(second);
+
+        }
+
+        console.log(connect("Ajava", "ZScript"));
+        console.log(connect("Python", "Program"));
+        console.log(connect("Grammer", "Book"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:66</title>
+</head>
+<body>
+    <h5>66. Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.  </h5>
+
+    <script>
+        function city(str){
+            if(str.substr(0, 3)=="Los" || str.substr(0, 3)=="New"){
+                return "City Name="+str;
+            }else{
+                return false;
+            }
+        }
+        console.log(city("LosVegas"));
+        console.log(city("Newyork"));
+        console.log(city("KTM"));
+    </script>
+</body>
+</html>

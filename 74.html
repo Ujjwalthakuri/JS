@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:74</title>
+</head>
+<body>
+    <h5>74. Write a JavaScript program to find the largest value between the first and last elements and set all the other elements to that value. Display the updated array.  </h5>
+
+    <script>
+        function larg(array){
+           let large = array[0]>array[2]?array[0]:array[2];
+           array[0]=large;
+           array[1]=large;
+           array[2]=large;
+            return array;
+        }
+        console.log(larg([10, 13, 30]));
+        console.log(larg([10, 13, 30,]));
+        console.log(larg([10, 13, -1]));
+    </script>
+</body>
+</html>
