@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:76</title>
+</head>
+<body>
+    <h5>76. Write a JavaScript program to create an array by taking the first and last elements from a given array of integers. The length must be larger than or equal to 1.  </h5>
+
+    <script>
+        function create(array){
+            let new_array=[];
+             new_array.push(array[0], array[array.length-1]);
+            return new_array;
+            }
+        console.log(create([2, 3, 4]));
+        console.log(create([2, 3, 4, 5]));
+    </script>
+</body>
+</html>

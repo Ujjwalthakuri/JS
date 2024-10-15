@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:77</title>
+</head>
+<body>
+    <h5>77. Write a JavaScript program to test whether an array of integers of length 2 contains 1 or 3.  </h5>
+
+    <script>
+        function test(arr){
+            // if(arr.indexOf(1)!==-1 || arr.indexOf(3)!==-1){
+            //     return true;
+            // }
+            if(arr[0]==1 || arr[1]==1 || arr[0]==3 || arr[1]==3){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(test([1, 3]));
+        console.log(test([1, 4]));
+        console.log(test([2, 5]));
+        console.log(test([3, 2,]));
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:87</title>
+</head>
+<body>
+    <h5>87. Write a JavaScript program to determine if two arrays of integers of the same length are similar. The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements.  </h5>
+
+
+    <script>
+      function array_checking(arra1, arra2) {
+
+  for(var i = 0; i < arra1.length; i++) {
+    for(var j = i; j < arra1.length; j++) {
+      var result = true,
+        temp = arra1[i];
+      arra1[i] = arra1[j];
+      arra1[j] = temp;
+      for(var k = 0; k < arra1.length; k++) {
+        if(arra1[k] !== arra2[k]) {
+          result = false;
+          break;
+        }
+      }
+      if(result) {
+        return true;
+      }
+      arra1[j] = arra1[i];
+      arra1[i] = temp;
+    }
+  }
+  return false;
+}
+
+console.log(array_checking([10,20,30], [10,20,30]))
+console.log(array_checking([10,20,30], [30,10,20]))
+console.log(array_checking([10,20,30,40], [10,30,20,40]))
+    </script>
+</body>
+</html>

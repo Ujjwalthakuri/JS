@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:82</title>
+</head>
+<body>
+    <h5>82. Write a JavaScript program to add two positive integers without carrying.  </h5>
+
+    <script>
+        function add(n1, n2){
+            let sum=0;
+            let x=1;
+            while(n1>0 && n2>0){
+                sum+=x*((n1+n2)%10);
+                n1/=10;
+                n2/=10;
+                x*=10;
+            }
+            return sum;
+        }
+        console.log(add(222, 911));
+        console.log(add(232, 991));
+    </script>
+</body>
+</html>

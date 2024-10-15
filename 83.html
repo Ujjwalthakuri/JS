@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:83</title>
+</head>
+<body>
+    <h5>83. Write a JavaScript program to find the longest string from a given array of strings.</h5>
+
+    <script>
+        function longest(array){
+           var max=array[0].length;
+           array.map(v=>max=Math.max(max, v.length));
+            result=array.filter(v=>v.length == max);
+            return result;
+        }
+        console.log(longest(["a", "aaaa", "aaa"]));
+        console.log(longest(["a", "aaaa", "bbbbb"]));
+        console.log(longest(["a", "aaaa", "bbbb"]));
+    </script>
+</body>
+</html>

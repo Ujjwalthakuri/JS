@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:88</title>
+</head>
+<body>
+    <h5>88. Write a JavaScript program that takes two integers and a divisor. If the given divisor divides both integers and does not divide either, two specified integers are similar. Check whether two integers are similar or not.  </h5>
+
+    <script>
+        function divisors(a, b, x){
+            if((a%x==0 && b%x==0) || (a%x!==0 && b%x!==0)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(divisors(25, 10, 5));
+        console.log(divisors(21, 13, 5));
+        console.log(divisors(25, 13, 5));
+    </script>
+</body>
+</html>

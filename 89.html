@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.no:89</title>
+</head>
+<body>
+    <h5>89. Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression.  </h5>
+
+    <script>
+        function check(a, b, c){
+            return (a+b==c || a-b==c || a*b==c || a/b==c);
+        }
+        console.log(check(20, 10, 30));
+        console.log(check(20, 10, 10));
+        console.log(check(15, 2, 30));
+        console.log(check(100, 2, 50));
+        console.log(check(10, 60, 30));
+    </script>
+</body>
+</html>
